@@ -38,7 +38,7 @@ OrangePi_Configure.c: OrangePi_Configure.l
 	$(V)flex $<
 	$(V)mv lex.yy.c src/OrangePi_Configure.c
 
-.PHONY: intall
+.PHONY: install
 install:
 	$(V)cp -rfa include/OrangePiV4L2 /usr/include
 	$(V)install OrangePi_Camera.conf /etc
